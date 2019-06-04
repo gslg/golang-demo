@@ -1,0 +1,15 @@
+goos: windows
+goarch: amd64
+pkg: medium-demo1
+BenchmarkMemoryHeap-4   	20000000	        78.2 ns/op	      96 B/op	       1 allocs/op
+BenchmarkMemoryHeap-4   	20000000	        77.7 ns/op	      96 B/op	       1 allocs/op
+BenchmarkMemoryHeap-4   	20000000	        79.1 ns/op	      96 B/op	       1 allocs/op
+BenchmarkMemoryHeap-4   	20000000	        79.8 ns/op	      96 B/op	       1 allocs/op
+BenchmarkMemoryHeap-4   	20000000	        76.4 ns/op	      96 B/op	       1 allocs/op
+BenchmarkMemoryHeap-4   	20000000	        77.9 ns/op	      96 B/op	       1 allocs/op
+BenchmarkMemoryHeap-4   	20000000	        77.5 ns/op	      96 B/op	       1 allocs/op
+BenchmarkMemoryHeap-4   	20000000	        75.5 ns/op	      96 B/op	       1 allocs/op
+BenchmarkMemoryHeap-4   	20000000	        76.7 ns/op	      96 B/op	       1 allocs/op
+BenchmarkMemoryHeap-4   	20000000	        76.5 ns/op	      96 B/op	       1 allocs/op
+PASS
+ok  	medium-demo1	16.509s
