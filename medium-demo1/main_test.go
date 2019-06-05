@@ -6,7 +6,8 @@ import (
 	"runtime/trace"
 	"testing"
 )
-
+//go test -bench=BenchmarkMemoryStack -benchmem -run=^$ -count=10 > stack.txt
+//go tool trace stack.out
 func BenchmarkMemoryStack(b *testing.B) {
 	var s S
 	f, err := os.Create("stack.out")
@@ -28,6 +29,8 @@ func BenchmarkMemoryStack(b *testing.B) {
 	_ = fmt.Sprintf("%v",s.a)
 }
 
+//go test -bench=BenchmarkMemoryHeap -benchmem -run=^$ -count=10 > heap.txt
+//go tool trace heap.out
 func BenchmarkMemoryHeap(b *testing.B){
 	var s *S
 	f,err := os.Create("heap.out")
